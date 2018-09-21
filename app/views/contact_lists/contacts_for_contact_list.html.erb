@@ -1,0 +1,13 @@
+<h1>List of contacts for <%= @contactList.name %></h1>
+
+<ol>
+	<% @contactList.contacts.each do |contact| %>
+		<li>
+			<b>name</b>: <%= contact.name %> 
+			<b>email</b>: <%= contact.email %>
+		</li>
+
+	<% end %>
+</ol>
+
+<p><%= link_to 'All contact-lists', contact_lists_path %></p>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: testemail1@gmail.com
+  name: testName1
+
+two:
+  email: testemail2@gmail.com
+  name: testName2
+
+three:
+  email: testemail3@gmail.com
+  name: testName3

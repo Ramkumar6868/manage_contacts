@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact: one
+  contact_list: one
+
+two:
+  contact: two
+  contact_list: two
+
+three:
+  contact: one
+  contact_list: two
+
+four:
+  contact: two
+  contact_list: one

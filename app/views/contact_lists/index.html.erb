@@ -1,0 +1,24 @@
+<h1>List of ContactLists</h1>
+<table>
+	<% @contact_lists.each do |contactList| %>
+		<tr>
+			<td><p><%= contactList.name %></p></td>
+			<td>
+				<%= link_to 'Show', contact_list_path(contactList) %>
+			</td>
+			<td>
+				<%= link_to 'Edit', edit_contact_list_path(contactList) %>
+			</td>
+			<td>
+				<%= link_to 'Delete', contact_list_path(contactList), method: :delete, data: { confirm: 'Are you sure' } %>
+			</td>
+			<td>
+				<%= link_to 'List of contacts in JSON', contact_list_contacts_for_contact_list_path(contactList) %>
+			</td>
+			<td>
+				<%= link_to 'Add contact', contact_list_new_contact_path(contactList) %>
+			</td>
+		</tr>
+
+	<% end %>
+</table>

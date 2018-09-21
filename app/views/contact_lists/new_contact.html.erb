@@ -1,0 +1,14 @@
+<h1>Add contact for <%= @contactList.name %></h1>
+
+<%= form_for @contactList, url: contact_list_add_contact_path, method: "post" do |form| %>
+	<p>
+		<label>Select Contact</label>
+
+		<%= form.collection_select(:contact_ids, @contacts, :id, :name ) %>
+	</p>
+	<p>
+		<%= form.submit %>
+	</p>
+<% end %>
+
+or <%= link_to 'Create New', new_contact_path%>

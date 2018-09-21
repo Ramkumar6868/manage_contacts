@@ -1,0 +1,24 @@
+<%= form_with model: @contactList, local: true do |form| %>
+	<% if @contactList.errors.any? %>
+		<div id="error_explanation" style="color: red;">
+			<h2>
+				<%= pluralize(@contactList.errors.count, "error") %>
+				prohibited this contact-list from being saved:
+			</h2>
+			<ul>
+				<% @contactList.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+	<p>
+		<%= form.label :name %><b/>
+		<%= form.text_field :name %>
+	</p>
+
+	<p>
+		<%= form.submit %>
+	</p>
+
+<% end %>
