@@ -13,7 +13,7 @@
 				<%= link_to 'Delete', contact_list_path(contactList), method: :delete, data: { confirm: 'Are you sure' } %>
 			</td>
 			<td>
-				<%= link_to 'List of contacts in JSON', contact_list_contacts_for_contact_list_path(contactList) %>
+				<%= link_to 'List of contacts in JSON', contact_list_contacts_for_contact_list_path(contactList), target: :_blank %>
 			</td>
 			<td>
 				<%= link_to 'Add contact', contact_list_new_contact_path(contactList) %>
